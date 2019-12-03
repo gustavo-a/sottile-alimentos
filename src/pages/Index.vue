@@ -27,7 +27,7 @@
           <g-image src="../assets/images/contato.png" alt="Contato"></g-image>
           <h2 class="sr-only">Contato</h2>
        </div>
-        <form class="w-full text-white" name="contact" action="/contato" method="POST" netlify>
+        <form class="w-full text-white" name="contact" action="/contato" method="POST" data-netlify="true">
           <div class="flex flex-wrap w-full">
             <div class="w-full sm:w-6/12 lg:w-5/12 lg:pr-4">
 
@@ -58,10 +58,10 @@
     <div class="container w-full mx-auto px-4 py-8">
       <footer>
         <a href="https://www.facebook.com/sottilealimento/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
-          <g-image src="../assets/images/facebook.svg" alt="Facebook"></g-image>
+          <img src="../assets/images/facebook.svg" alt="Facebook" />
         </a>
         <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
-          <g-image src="../assets/images/instagram.svg" alt="Instagram"></g-image>
+          <img src="../assets/images/instagram.svg" alt="Instagram" />
         </a>
       </footer>
     </div>
