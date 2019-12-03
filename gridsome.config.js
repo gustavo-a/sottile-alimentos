@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 module.exports = {
   siteName: 'Sottile Alimentos',
   siteUrl: 'sotillealimentos.com.br',
-  siteDescription: '',
+  siteDescription: 'A gente acredita que é possível mudar o mundo, alimentar 7 bilhões de seres humanos de forma sustentável e, ao mesmo tempo, melhorar a saúde e a qualidade de vida das pessoas. Conheça o New Burger!',
   plugins: [],
   css: {
     loaderOptions: {

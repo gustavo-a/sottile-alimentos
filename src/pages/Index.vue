@@ -82,7 +82,7 @@ export default {
     SottileButton
   },
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Conheça o New Burger'
   },
   methods: {
     smoothScroll(){
