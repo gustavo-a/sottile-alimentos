@@ -13,10 +13,10 @@
       <div class="container mx-auto px-4 py-8">
         <footer class="absolute bottom-0 left-0 ml-10 mb-6">
           <a href="https://www.facebook.com/sottilealimento/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
-            <g-image src="../assets/images/facebook.svg" alt="Facebook"></g-image>
+            <img src="../assets/images/facebook.svg" alt="Facebook" />
           </a>
           <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
-            <g-image src="../assets/images/instagram.svg" alt="Instagram"></g-image>
+            <img src="../assets/images/instagram.svg" alt="Instagram" />
           </a>
         </footer>
       </div>
