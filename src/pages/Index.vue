@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 pb-10 pt-1 md:pt-10">
       <header class="flex flex-wrap justify-between py-4">
         <g-image src="../assets/images/logo_sottile.png" height="53" width="200" quality="70" alt="Sottile Alimentos"></g-image>
-        <div class="mt-8 sm:mt-0">
+        <div class="w-full sm:w-auto mt-8 sm:mt-0 self-center">
           <sottile-button href="#contato"><strong style="font-weight:600">Quer vender nossos produtos?</strong></sottile-button>
         </div>
       </header>
@@ -12,16 +12,16 @@
       <section class="flex flex-wrap">
         <div class="w-full md:w-6/12">
           <g-image src="../assets/images/muito_prazer.png" alt="Muito prazer"></g-image>
-          <g-image class="pt-8" src="../assets/images/sottile.png" alt="somos a Sottile"></g-image>
+          <g-image class="mt-40 md:mt-8" src="../assets/images/sottile.png" alt="somos a Sottile"></g-image>
           <h1 class="sr-only">Muito prazer, somos a Sottile</h1>
           <p class="mt-8 text-gray-100 text-3xl tracking-widest">Vem aí um <strong>novo site</strong>.</p>
         </div>
         <div class="w-full md:w-6/12">
-          <g-image id="burger_img" class="absolute right-0 mt-8 sm:mt-0" src="../assets/images/new_burger_sottile.png" alt="Mão segurando o New Burger da Sottile Alimentos"></g-image>
+          <g-image id="burger_img" data-rate="-0.4" class="parallax absolute right-0 mt-8 sm:mt-0" src="../assets/images/new_burger_sottile.png" alt="Mão segurando o New Burger da Sottile Alimentos"></g-image>
         </div>
       </section>
     </div>
-    <div class="container w-full mx-auto md:px-4 pt-32 sm:pt-20 md:pt-8 pb-8">
+    <div class="container w-full mx-auto md:px-4 pb-8">
       <section class="bg-red-sottile-dark py-24 md:py-32 px-12">
        <div id="contato" class="pb-16">
           <g-image src="../assets/images/contato.png" alt="Contato"></g-image>
@@ -95,10 +95,24 @@ export default {
           });
         });
       });
+    },
+    parallaxBurger(){
+      window.addEventListener('scroll', e =>{
+        const target = document.querySelectorAll('.parallax')
+        let scrolled = window.pageYOffset
+
+        for(let i = 0; i<target.length; i++){
+          let pos = scrolled * target[i].dataset.rate
+
+          target[i].style.transform = 'translate3d(0px, '+pos+'px, 0px)'
+        }
+
+      })
     }
   },
   mounted(){
     this.smoothScroll()
+    this.parallaxBurger()
   }
 }
 </script>
@@ -106,6 +120,7 @@ export default {
 <style lang="scss">
   #burger_img{
     max-width: 90vw;
+    top: 400px;
 
     @media screen and (min-width: 640px){
       max-width: 70vw;
@@ -113,6 +128,7 @@ export default {
 
     @media screen and (min-width: 768px){
       max-width: 50vw;
+      top: unset;
     }
 
     @media screen and (min-width: 1024px){
