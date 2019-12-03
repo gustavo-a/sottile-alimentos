@@ -27,26 +27,30 @@
           <g-image src="../assets/images/contato.png" alt="Contato"></g-image>
           <h2 class="sr-only">Contato</h2>
        </div>
-        <form class="w-full text-white" name="contact" action="/contato" method="POST" data-netlify="true">
+        <form id="contact" class="w-full text-white" name="contact" action="/contato" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <div class="flex flex-wrap w-full">
             <div class="w-full sm:w-6/12 lg:w-5/12 lg:pr-4">
+              <div class="hidden">
+                <label for="bot-field">Don’t fill this out if you're human:</label>
+                <input name="bot-field" />
+              </div>
 
               <label for="nome" class="sr-only">Nome</label>
-              <input placeholder="Nome" name="nome" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" type="text" />
+              <input placeholder="Nome" required name="nome" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" type="text" />
 
               <label for="empresa" class="sr-only">Empresa</label>
-              <input placeholder="Empresa" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="empresa" type="text" />
+              <input placeholder="Empresa" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="empresa" type="text" />
 
               <label for="telefone" class="sr-only">Telefone</label>
-              <input placeholder="Telefone" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="telefone" type="text" />
+              <input placeholder="Telefone" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="telefone" type="text" />
 
               <label for="email" class="sr-only">E-mail</label>
-              <input placeholder="E-mail" class="placeholder-white w-full sm:w-10/12 py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="email" type="mail" />
+              <input placeholder="E-mail" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="email" type="mail" />
 
             </div>
             <div class="w-full mt-8 sm:mt-0 sm:w-6/12 lg:w-5/12">
               <label for="mensagem" class="sr-only">E-mail</label>
-              <textarea placeholder="Mensagem" class="placeholder-white w-full sm:w-10/12 h-full py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="mensagem" id=""></textarea>
+              <textarea form="contact" placeholder="Mensagem" required class="placeholder-white w-full sm:w-10/12 h-full py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="mensagem" id=""></textarea>
             </div>
             <div class="w-full mt-8 lg:w-2/12 lg-mt-0 self-end">
               <button class="bg-red-sottile border-3 border-red-800 py-3 px-5 rounded-full tracking-widest" type="submit"><strong>Enviar</strong></button>
