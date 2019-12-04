@@ -12,12 +12,14 @@
       <section class="flex flex-wrap">
         <div class="w-full md:w-6/12">
           <g-image src="../assets/images/muito_prazer.png" alt="Muito prazer"></g-image>
-          <g-image class="mt-40 md:mt-8" src="../assets/images/sottile.png" alt="somos a Sottile"></g-image>
+          <g-image class="mt-40 sm:mt-48 md:mt-8" src="../assets/images/sottile.png" alt="somos a Sottile"></g-image>
           <h1 class="sr-only">Muito prazer, somos a Sottile</h1>
           <p class="mt-8 text-gray-100 text-3xl tracking-widest">Vem aí um <strong>novo site</strong>.</p>
         </div>
         <div class="w-full md:w-6/12">
-          <g-image id="burger_img" data-rate="-0.4" class="parallax absolute right-0 mt-8 sm:mt-0" src="../assets/images/new_burger_sottile.png" alt="Mão segurando o New Burger da Sottile Alimentos"></g-image>
+          <g-image id="selo_img" data-rate="-0.3" class="parallax absolute mt-32 sm:mt-0 md:mt-40 lg:mt-16" src="../assets/images/selo.png" alt="Selo 100% vegetal"></g-image>
+          <g-image id="burger_img" data-rate="-0.5" class="parallax absolute right-0 mt-24 sm:mt-0 md:mt-32 lg:mt-0" src="../assets/images/hamburguer.png" alt="Mão segurando o New Burger da Sottile Alimentos"></g-image>
+          <g-image id="newburger_img" data-rate="-0.6" class="parallax absolute mt-20 md:mt-32 lg:mt-16" src="../assets/images/newburger.png" alt="Marca NewBurger"></g-image>
         </div>
       </section>
     </div>
@@ -144,6 +146,51 @@ export default {
 </script>
 
 <style lang="scss">
+  .parallax{
+    transition: transform 0.1s;
+  }
+
+  #selo_img{
+    top:450px;
+    left: 0;
+    max-width: 25vw;
+
+    @media screen and (min-width: 640px){
+      right: 60%;
+      left: unset;
+      top:450px
+    }
+
+    @media screen and (min-width: 768px){
+      right: 35%;
+      max-width: 18vw;
+      top:unset
+    }
+
+    @media screen and (min-width: 1024px){
+      right: 45%;
+      max-width: 20vw;
+    }
+  }
+
+  #newburger_img{
+    right: 10%;
+    top:400px;
+    max-width: 25vw;
+
+     @media screen and (min-width: 640px){
+      right: 15%;
+      top:400px;
+      max-width: 20vw;
+    }
+
+    @media screen and (min-width: 768px){
+      right: 10%;
+      top: unset;
+      max-width: 15vw;
+    }
+  }
+
   #burger_img{
     max-width: 90vw;
     top: 400px;
