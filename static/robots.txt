@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow:
+Disallow: /obrigado
+Disallow: /404
+
+Sitemap: https://sottilealimentos.com.br/sitemap.xml
