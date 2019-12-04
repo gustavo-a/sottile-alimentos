@@ -5,6 +5,12 @@ import DefaultLayout from '~/layouts/Default.vue'
 
 if (process.isClient) {
   const WebFont = require('webfontloader');
+
+  WebFont.load({
+    google: {
+      families: ['Raleway:400,600,800&display=swap']
+    }
+  });
 }
 
 export default function (Vue, { router, head, isClient }) {
