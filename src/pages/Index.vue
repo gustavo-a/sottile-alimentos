@@ -132,7 +132,7 @@ export default {
           ...this.formData,
         }),
       })
-      .then(() => window.location.href = 'https://sottilealimentos.com.br/' )
+      .then(() => window.location.href = 'https://sottilealimentos.com.br/obrigado' )
       .catch(error => alert(error))
     }
   },

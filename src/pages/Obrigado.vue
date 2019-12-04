@@ -38,7 +38,7 @@ export default {
   },
   mounted(){
     setTimeout(() => {
-      window.history.back();
+      window.location.href = 'https://sottilealimentos.com.br/'
     }, 3000);
   },
   metaInfo: {
