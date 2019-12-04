@@ -29,7 +29,7 @@
           <g-image src="../assets/images/contato.png" alt="Contato"></g-image>
           <h2 class="sr-only">Contato</h2>
        </div>
-        <form id="contact" @submit.prevent="handleSubmit" class="w-full text-white" name="contact" action="/contato" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form id="contact" @submit.prevent="handleSubmit" class="w-full text-white" name="contact" action="/obrigado" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <div class="flex flex-wrap w-full">
             <div class="w-full sm:w-6/12 lg:w-5/12 lg:pr-4">
               <div class="hidden">
