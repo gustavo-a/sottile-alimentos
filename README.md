@@ -1,14 +1,7 @@
-# Default starter for Gridsome
+# Sottile Alimentos
 
-This is the project you get when you run `gridsome create new-project`.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/51601a71-0927-451f-bf4b-2af580ce8dc4/deploy-status)](https://app.netlify.com/sites/confident-spence-6ba6fe/deploys) ![GitHub language count](https://img.shields.io/github/languages/count/gustavo-a/sottile-alimentos) ![GitHub top language](https://img.shields.io/github/languages/top/gustavo-a/sottile-alimentos) ![GitHub](https://img.shields.io/github/license/gustavo-a/sottile-alimentos) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/gustavo-a/sottile-alimentos/master)
 
-### 1. Install Gridsome CLI tool if you don't have
+Site estático feito para a Sottile Alimentos
 
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+Online em https://sottilealimentos.com.br
