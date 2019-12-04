@@ -132,7 +132,7 @@ export default {
           ...this.formData,
         }),
       })
-      .then(() => this.$router.push('/contato'))
+      .then(() => window.location.href('https://sottilealimentos.com.br/'))
       .catch(error => alert(error))
     }
   },
