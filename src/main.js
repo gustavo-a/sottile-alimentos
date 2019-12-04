@@ -2,13 +2,16 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+const WebFont = require('webfontloader');
+
+WebFont.load({
+  google: {
+    families: ['Raleway:400,600,800&display=swap']
+  }
+});
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  head.link.push({
-    rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Raleway:400,600,800&display=swap'
-  })
   head.htmlAttrs = { lang: 'pt-BR' }
 }
