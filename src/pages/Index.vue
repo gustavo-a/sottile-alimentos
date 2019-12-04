@@ -93,7 +93,10 @@ export default {
     }
   },
   metaInfo: {
-    title: 'Conheça o New Burger'
+    title: 'Conheça o New Burger',
+    link: [
+      {rel: 'canonical', href: 'https://sottilealimentos.com.br'}
+    ]
   },
   methods: {
     smoothScroll(){
