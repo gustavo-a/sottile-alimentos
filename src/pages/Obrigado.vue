@@ -41,6 +41,13 @@ export default {
       window.location.href = 'https://sottilealimentos.com.br/'
     }, 3000);
   },
+  mounted(){
+    WebFont.load({
+      google: {
+        families: ['Raleway:400,600,800&display=swap']
+      }
+    });
+  },
   metaInfo: {
     title: 'Obrigado!'
   }

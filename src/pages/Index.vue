@@ -144,7 +144,13 @@ export default {
   mounted(){
     this.smoothScroll()
     this.parallaxBurger()
-  }
+
+    WebFont.load({
+      google: {
+        families: ['Raleway:400,600,800&display=swap']
+      }
+    });
+  },
 }
 </script>
 

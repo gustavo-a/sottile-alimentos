@@ -39,6 +39,13 @@ export default {
   },
   metaInfo: {
     title: 'Página não encontrada'
+  },
+  mounted(){
+    WebFont.load({
+      google: {
+        families: ['Raleway:400,600,800&display=swap']
+      }
+    });
   }
 }
 </script>
