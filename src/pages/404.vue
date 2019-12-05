@@ -13,16 +13,16 @@
       </div>
       <div class="container mx-auto px-4 py-8">
         <footer class="absolute bottom-0 left-0 ml-10 mb-6">
-          <a href="https://www.facebook.com/sottilealimento/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
+          <a href="https://www.facebook.com/sottilealimento/" target="_blank" rel="noopener" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
             <img src="../assets/images/facebook.svg" alt="Facebook" />
           </a>
-          <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
+          <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" rel="noopener" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
             <img src="../assets/images/instagram.svg" alt="Instagram" />
           </a>
         </footer>
       </div>
       <div class="fixed bottom-0 right-0 m-8 rounded-full shadow-lg">
-        <a href="http://wa.me/+552137414013" target="_blank">
+        <a href="http://wa.me/+552137414013" target="_blank" rel="noopener">
           <g-image width="64px" src="../assets/images/whatsapp.png" alt="Whatsapp"></g-image>
         </a>
       </div>

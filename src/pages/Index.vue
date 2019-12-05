@@ -37,22 +37,22 @@
                 <input name="bot-field" />
               </div>
 
-              <label for="nome" class="sr-only">Nome</label>
-              <input placeholder="Nome" required name="nome" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" type="text" v-model="formData.nome"/>
+              <label for="contact_name" class="sr-only">Nome</label>
+              <input placeholder="Nome" required name="nome" id="contact_name" class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" type="text" v-model="formData.nome"/>
 
-              <label for="empresa" class="sr-only">Empresa</label>
-              <input placeholder="Empresa" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="empresa" type="text" v-model="formData.empresa" />
+              <label for="contact_empresa" class="sr-only">Empresa</label>
+              <input placeholder="Empresa" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="empresa" id="contact_empresa" type="text" v-model="formData.empresa" />
 
-              <label for="telefone" class="sr-only">Telefone</label>
-              <input placeholder="Telefone" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="telefone" type="text" v-model="formData.telefone"/>
+              <label for="contact_telefoone" class="sr-only">Telefone</label>
+              <input placeholder="Telefone" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 mb-5 bg-transparent border border-gray-300 rounded-lg" name="telefone" id="contact_telefoone" type="text" v-model="formData.telefone"/>
 
-              <label for="email" class="sr-only">E-mail</label>
-              <input placeholder="E-mail" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="email" type="mail" v-model="formData.email"/>
+              <label for="contact_email" class="sr-only">E-mail</label>
+              <input placeholder="E-mail" required class="placeholder-white w-full sm:w-10/12 py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="email" id="contact_email" type="mail" v-model="formData.email"/>
 
             </div>
             <div class="w-full mt-8 sm:mt-0 sm:w-6/12 lg:w-5/12">
-              <label for="mensagem" class="sr-only">E-mail</label>
-              <textarea form="contact" placeholder="Mensagem" required class="placeholder-white w-full sm:w-10/12 h-full py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="mensagem" v-model="formData.mensagem"></textarea>
+              <label for="contact_mensagem" class="sr-only">E-mail</label>
+              <textarea form="contact" id="contact_mensagem" placeholder="Mensagem" required class="placeholder-white w-full sm:w-10/12 h-full py-3 px-4 bg-transparent border border-gray-300 rounded-lg" name="mensagem" v-model="formData.mensagem"></textarea>
             </div>
             <div class="w-full mt-8 lg:w-2/12 lg-mt-0 self-end">
               <button class="bg-red-sottile border-3 border-red-800 py-3 px-5 rounded-full tracking-widest" type="submit"><strong>Enviar</strong></button>
@@ -63,17 +63,17 @@
     </div>
     <div class="container w-full mx-auto px-4 py-8">
       <footer>
-        <a href="https://www.facebook.com/sottilealimento/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
+        <a href="https://www.facebook.com/sottilealimento/" target="_blank" rel="noopener" class="svg__icon bg-red-sottile-dark p-3 rounded-full mr-6 inline-block">
           <img src="../assets/images/facebook.svg" alt="Facebook" />
         </a>
-        <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
+        <a href="https://www.instagram.com/sottile_alimentos/" target="_blank" rel="noopener" class="svg__icon bg-red-sottile-dark p-3 rounded-full inline-block">
           <img src="../assets/images/instagram.svg" alt="Instagram" />
         </a>
       </footer>
     </div>
 
     <div class="fixed bottom-0 right-0 m-8 rounded-full shadow-lg">
-      <a href="http://wa.me/+552137414013" target="_blank">
+      <a href="http://wa.me/+552137414013" target="_blank" rel="noopener">
         <g-image width="64px" src="../assets/images/whatsapp.png" alt="Whatsapp"></g-image>
       </a>
     </div>
