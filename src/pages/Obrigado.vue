@@ -4,8 +4,7 @@
       <div class="container mx-auto px-4 pb-10 pt-1 md:pt-10">
         <header class="flex flex-wrap">
           <g-image
-            src="../assets/images/logo_sottile.png"
-            height="53"
+            src="../assets/images/logo_sottile2.png"
             width="200"
             quality="70"
             alt="Sottile Alimentos"
