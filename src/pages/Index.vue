@@ -84,48 +84,47 @@
 import SottileButton from '~/components/SottileButton'
 
 export default {
-  components:{
+  components: {
     SottileButton
   },
-  data(){
+  data() {
     return {
       formData: {}
     }
   },
   metaInfo: {
     title: 'Conheça o New Burger',
-    link: [
-      {rel: 'canonical', href: 'https://sottilealimentos.com.br'}
-    ]
+    link: [{ rel: 'canonical', href: 'https://sottilealimentos.com.br' }]
   },
   methods: {
-    smoothScroll(){
+    smoothScroll() {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault()
 
           document.querySelector(this.getAttribute('href')).scrollIntoView({
-              behavior: 'smooth'
-          });
-        });
-      });
+            behavior: 'smooth'
+          })
+        })
+      })
     },
-    parallaxBurger(){
-      window.addEventListener('scroll', e =>{
+    parallaxBurger() {
+      window.addEventListener('scroll', e => {
         const target = document.querySelectorAll('.parallax')
         let scrolled = window.pageYOffset
 
-        for(let i = 0; i<target.length; i++){
+        for (let i = 0; i < target.length; i++) {
           let pos = scrolled * target[i].dataset.rate
 
-          target[i].style.transform = 'translate3d(0px, '+pos+'px, 0px)'
+          target[i].style.transform = 'translate3d(0px, ' + pos + 'px, 0px)'
         }
-
       })
     },
     encode(data) {
       return Object.keys(data)
-        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .map(
+          key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+        )
         .join('&')
     },
     handleSubmit(e) {
@@ -134,90 +133,93 @@ export default {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encode({
           'form-name': e.target.getAttribute('name'),
-          ...this.formData,
-        }),
+          ...this.formData
+        })
       })
-      .then(() => window.location.href = 'https://sottilealimentos.com.br/obrigado' )
-      .catch(error => alert(error))
+        .then(
+          () =>
+            (window.location.href = 'https://sottilealimentos.com.br/obrigado')
+        )
+        .catch(error => alert(error))
     }
   },
-  mounted(){
+  mounted() {
     this.smoothScroll()
     this.parallaxBurger()
-  },
+  }
 }
 </script>
 
 <style lang="scss">
-  .parallax{
-    transition: transform 0.1s;
+.parallax {
+  transition: transform 0.1s;
+}
+
+#selo_img {
+  top: 450px;
+  left: 0;
+  max-width: 25vw;
+
+  @media screen and (min-width: 640px) {
+    right: 60%;
+    left: unset;
+    top: 450px;
   }
 
-  #selo_img{
-    top:450px;
-    left: 0;
-    max-width: 25vw;
-
-    @media screen and (min-width: 640px){
-      right: 60%;
-      left: unset;
-      top:450px
-    }
-
-    @media screen and (min-width: 768px){
-      right: 35%;
-      max-width: 18vw;
-      top:unset
-    }
-
-    @media screen and (min-width: 1024px){
-      right: 45%;
-      max-width: 20vw;
-    }
+  @media screen and (min-width: 768px) {
+    right: 35%;
+    max-width: 18vw;
+    top: unset;
   }
 
-  #newburger_img{
-    right: 10%;
-    top:400px;
-    max-width: 25vw;
-
-     @media screen and (min-width: 640px){
-      right: 15%;
-      top:400px;
-      max-width: 20vw;
-    }
-
-    @media screen and (min-width: 768px){
-      right: 10%;
-      top: unset;
-      max-width: 15vw;
-    }
+  @media screen and (min-width: 1024px) {
+    right: 45%;
+    max-width: 20vw;
   }
+}
 
-  #burger_img{
-    max-width: 90vw;
+#newburger_img {
+  right: 10%;
+  top: 400px;
+  max-width: 25vw;
+
+  @media screen and (min-width: 640px) {
+    right: 15%;
     top: 400px;
-
-    @media screen and (min-width: 640px){
-      max-width: 70vw;
-    }
-
-    @media screen and (min-width: 768px){
-      max-width: 50vw;
-      top: unset;
-    }
-
-    @media screen and (min-width: 1024px){
-      max-width: 60vw;
-    }
-
-    @media screen and (min-width: 1920px){
-      width: 55vw;
-      max-width: 1300px;
-    }
+    max-width: 20vw;
   }
 
-  .svg__icon{
-    max-width: 48px;
+  @media screen and (min-width: 768px) {
+    right: 10%;
+    top: unset;
+    max-width: 15vw;
   }
+}
+
+#burger_img {
+  max-width: 90vw;
+  top: 400px;
+
+  @media screen and (min-width: 640px) {
+    max-width: 70vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 50vw;
+    top: unset;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 60vw;
+  }
+
+  @media screen and (min-width: 1920px) {
+    width: 55vw;
+    max-width: 1300px;
+  }
+}
+
+.svg__icon {
+  max-width: 48px;
+}
 </style>

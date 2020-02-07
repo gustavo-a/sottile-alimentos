@@ -64,11 +64,11 @@ export default {
   components: {
     SottileButton
   },
-  created() {
-    this.$gatg.pageview({
-      page_path: '/404'
-    })
-  },
+  // created() {
+  //   this.$gatg.pageview({
+  //     page_path: '/404'
+  //   })
+  // },
   metaInfo: {
     title: 'Página não encontrada'
   }

@@ -59,16 +59,19 @@ export default {
   components: {
     SottileButton
   },
-  created() {
-    this.$gatg.pageview({
-      page_path: '/obrigado'
-    })
-  },
   mounted() {
+    // track()
     setTimeout(() => {
       window.location.href = 'https://sottilealimentos.com.br/'
     }, 3000)
   },
+  // methods: {
+  //   track() {
+  //     this.$gatg.pageview({
+  //       page_path: '/obrigado'
+  //     })
+  //   }
+  // },
   metaInfo: {
     title: 'Obrigado!'
   }
